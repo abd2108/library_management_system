@@ -607,16 +607,16 @@ vector<pair<ll, time_t>> loadBorrowedCSV(const string& filename){
 
 void first_time(){
     map <ll, Book> books;
-    books[123]=Book(123, "Intro to Machine Learning 1", "Piyush Rai", "IIT Kanpur", 2018);
-    books[124]=Book(124, "Intro to Machine Learning 2", "Piyush Rai", "IIT Kanpur", 2018);
-    books[125]=Book(125, "Intro to Machine Learning 3", "Piyush Rai", "IIT Kanpur", 2019);
-    books[126]=Book(126, "Intro to Machine Learning 4", "Piyush Rai", "IIT Kanpur", 2019);
-    books[127]=Book(127, "Intro to Machine Learning 5", "Piyush Rai", "IIT Kanpur", 2019);
-    books[128]=Book(128, "Intro to Machine Learning 6", "Piyush Rai", "IIT Kanpur", 2020);
-    books[129]=Book(129, "Intro to Machine Learning 7", "Piyush Rai", "IIT Kanpur", 2020);
-    books[130]=Book(130, "Intro to Machine Learning 8", "Piyush Rai", "IIT Kanpur", 2021);
-    books[131]=Book(131, "Intro to Machine Learning 9", "Piyush Rai", "IIT Kanpur", 2021);
-    books[132]=Book(132, "Intro to Machine Learning 10", "Piyush Rai", "IIT Kanpur", 2022);
+    books[123]=Book(123, "Intro to Machine Learning 1");
+    books[124]=Book(124, "Intro to Machine Learning 2");
+    books[125]=Book(125, "Intro to Machine Learning 3");
+    books[126]=Book(126, "Intro to Machine Learning 4");
+    books[127]=Book(127, "Intro to Machine Learning 5");
+    books[128]=Book(128, "Intro to Machine Learning 6");
+    books[129]=Book(129, "Intro to Machine Learning 7");
+    books[130]=Book(130, "Intro to Machine Learning 8");
+    books[131]=Book(131, "Intro to Machine Learning 9");
+    books[132]=Book(132, "Intro to Machine Learning 10");
 
     string filename="books_csv.csv";
 
@@ -626,7 +626,7 @@ void first_time(){
     map <ll, User> userslist;
     filename="credentials.csv";
     
-    userslist[0]=User(0, "Charan", "IITK", 0, 0); //1 Librarian
+    userslist[0]=User(0, "Charan", "IITBHU", 0, 0); //1 Librarian
 
     //5 students
     userslist[1]=User(1, "Spandan", "1", 0, 1);
@@ -1114,4 +1114,5 @@ int main(){
     saveUsersCSV(loadedUsers, "credentials.csv");
 
     return 0;
+
 }
